@@ -1,4 +1,4 @@
-package net.shtykhno.codility
+package net.shtykhno.codility.lesson1
 
 /**
 

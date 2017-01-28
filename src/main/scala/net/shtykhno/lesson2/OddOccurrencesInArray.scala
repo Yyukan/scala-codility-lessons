@@ -1,4 +1,4 @@
-package net.shtykhno.codility
+package net.shtykhno.codility.lesson2
 
 import scala.collection.mutable
 
