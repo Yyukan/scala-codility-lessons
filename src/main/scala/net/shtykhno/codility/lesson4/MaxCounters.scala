@@ -59,8 +59,30 @@ Complexity:
 
 expected worst-case time complexity is O(N+M);
 expected worst-case space complexity is O(N), beyond input storage (not counting the storage required for input arguments).
-Elements of input arrays can be modified.*/
+Elements of input arrays can be modified.
+
+ 88%
+*/
 
 object MaxCounters extends App {
-  def solution(n: Int, a: Array[Int]): Array[Int] = ???
+  def solution(n: Int, a: Array[Int]): Array[Int] = {
+    val counters = Array.fill(n)(0)
+    var maxCounter = 0
+
+    for (i <- a.indices) {
+        a(i) match {
+            case increase if 1 <= increase && increase <= n =>
+                counters(increase - 1) = counters(increase - 1) + 1
+                if (counters(increase - 1) > maxCounter) maxCounter = counters(increase - 1)
+            case max if max == n + 1 =>
+                for (j <- counters.indices){
+                    counters(j) = maxCounter
+                }
+        }
+    }
+
+    counters
+  }
+
+  println(solution(5, Array(3,4,4,6,1,4,4)).mkString(","))
 }
