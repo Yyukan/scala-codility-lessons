@@ -21,9 +21,12 @@ Complexity:
 expected worst-case time complexity is O(1);
 expected worst-case space complexity is O(1).
 
+  50%
 */
 object CountDiv extends App {
-  def solution(a: Int, b: Int, k: Int): Int = ???
+  def solution(a: Int, b: Int, k: Int): Int = {
+    (b - a) / k + 1
+  }
 
   assert(solution(6, 11, 2) == 3)
 }
