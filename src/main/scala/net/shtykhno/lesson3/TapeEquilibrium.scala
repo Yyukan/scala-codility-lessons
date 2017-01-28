@@ -49,6 +49,7 @@ expected worst-case time complexity is O(N);
 expected worst-case space complexity is O(N), beyond input storage (not counting the storage required for input arguments).
 Elements of input arrays can be modified.
 
+100%
  */
 object TapeEquilibrium extends App {
   def solution(a: Array[Int]): Int = {

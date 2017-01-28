@@ -28,6 +28,7 @@ Complexity:
 expected worst-case time complexity is O(log(N));
 expected worst-case space complexity is O(1).
 
+80%
 */
 object BinaryGap extends App {
   def solution(n: Int): Int = {
