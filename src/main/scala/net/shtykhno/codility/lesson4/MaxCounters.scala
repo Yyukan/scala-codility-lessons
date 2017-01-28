@@ -1,4 +1,4 @@
-package net.shtykhno.lesson4
+package net.shtykhno.codility.lesson4
 
 /**
 You are given N counters, initially set to 0, and you have two possible operations on them:

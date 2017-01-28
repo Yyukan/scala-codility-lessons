@@ -1,4 +1,4 @@
-package net.shtykhno.lesson3
+package net.shtykhno.codility.lesson3
 
 /**
 A small frog wants to get to the other side of the road.

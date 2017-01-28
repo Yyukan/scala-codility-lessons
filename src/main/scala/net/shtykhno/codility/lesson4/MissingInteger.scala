@@ -1,4 +1,4 @@
-package net.shtykhno.lesson4
+package net.shtykhno.codility.lesson4
 
 /**
 Write a function:

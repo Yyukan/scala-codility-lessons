@@ -1,4 +1,4 @@
-package net.shtykhno.lesson4
+package net.shtykhno.codility.lesson4
 
 /**
 A small frog wants to get to the other side of a river. The frog is initially located on one bank of the river (position 0)

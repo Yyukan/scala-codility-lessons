@@ -1,4 +1,4 @@
-package net.shtykhno.lesson4
+package net.shtykhno.codility.lesson4
 
 /**
 A non-empty zero-indexed array A consisting of N integers is given.

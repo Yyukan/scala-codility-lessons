@@ -1,4 +1,4 @@
-package net.shtykhno.lesson3
+package net.shtykhno.codility.lesson3
 
 /**
 A zero-indexed array A consisting of N different integers is given. The array contains integers in the range [1..(N + 1)],
