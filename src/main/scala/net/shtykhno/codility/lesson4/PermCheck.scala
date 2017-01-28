@@ -70,5 +70,6 @@ object PermCheck extends App {
 
   }
 
-  println(solution(Array(4,1,3,2)))
+  assert(solution(Array(4,1,3)) == 0)
+  assert(solution(Array(4,1,3,2)) == 1)
 }

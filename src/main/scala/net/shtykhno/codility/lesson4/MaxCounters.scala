@@ -84,5 +84,5 @@ object MaxCounters extends App {
     counters
   }
 
-  println(solution(5, Array(3,4,4,6,1,4,4)).mkString(","))
+  assert (solution(5, Array(3, 4, 4, 6, 1, 4, 4)) sameElements Array(3, 2, 2, 4, 2))
 }

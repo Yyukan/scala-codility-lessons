@@ -49,5 +49,7 @@ object BinaryGap extends App {
     result
   }
 
-  println(solution(20))
+  assert(solution(529) == 4)
+  assert(solution(20) == 1)
+  assert(solution(15) == 0)
 }

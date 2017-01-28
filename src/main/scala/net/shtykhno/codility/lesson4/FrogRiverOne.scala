@@ -57,7 +57,6 @@ object FrogRiverOne extends App {
   def solution(x: Int, a: Array[Int]): Int = ???
 
 
-
-  println(solution(5, Array(1,3,1,4,2,3,5,4)))
+  assert(solution(5, Array(1, 3, 1, 4, 2, 3, 5, 4)) == 6)
 
 }

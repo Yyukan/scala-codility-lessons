@@ -44,7 +44,7 @@ object PermMissingElement extends App {
     }
   }
 
-  println(solution(Array()))
-  println(solution(Array(1)))
-  println(solution(Array(2, 3, 1, 5)))
+  assert(solution(Array()) == 1)
+  assert(solution(Array(1)) == 2)
+  assert(solution(Array(2, 3, 1, 5)) == 4)
 }

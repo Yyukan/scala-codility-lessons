@@ -45,6 +45,6 @@ object MissingInteger extends App {
     }
   }
 
-  println(solution(Array(1)))
-  println(solution(Array(1, 3, 6, 7, 4, 1, 2)))
+  assert(solution(Array(1)) == 2)
+  assert(solution(Array(1, 3, 6, 7, 4, 1, 2)) == 5)
 }

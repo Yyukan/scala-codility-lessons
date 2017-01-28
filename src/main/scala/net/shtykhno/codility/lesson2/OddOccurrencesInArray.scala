@@ -65,5 +65,5 @@ object OddOccurrencesInArray extends App {
     seen.head
   }
 
-  println(solution(Array(9, 3, 9, 3, 9, 7, 9)))
+  assert(solution(Array(9, 3, 9, 3, 9, 7, 9)) == 7)
 }

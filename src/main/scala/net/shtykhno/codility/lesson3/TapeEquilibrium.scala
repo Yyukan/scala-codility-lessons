@@ -66,5 +66,5 @@ object TapeEquilibrium extends App {
     -1
   }
 
-  println(solution(Array(-1, 3, -4, 5, 1, -6, 2, 1)))
+  assert(solution(Array(-1, 3, -4, 5, 1, -6, 2, 1)) == 1)
 }

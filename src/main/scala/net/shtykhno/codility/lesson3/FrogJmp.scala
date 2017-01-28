@@ -43,5 +43,5 @@ object FrogJmp extends App {
     if (x + d * jumps < y) jumps + 1 else jumps
   }
 
-  println(solution(10, 85, 30))
+  assert(solution(10, 85, 30) == 3)
 }

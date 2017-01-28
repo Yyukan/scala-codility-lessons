@@ -3,11 +3,13 @@ package net.shtykhno.codility.lesson99
 /**
 In this problem we consider binary trees, represented by pointer data structures.
 
-A binary tree is either an empty tree or a node (called the root) consisting of a single integer value and two further binary trees, called the left subtree and the right subtree.
+A binary tree is either an empty tree or a node (called the root) consisting of a single integer value and two further
+binary trees, called the left subtree and the right subtree.
 
-For example, the figure below shows a binary tree consisting of six nodes. Its root contains the value 5, and the roots of its left and right subtrees have the values 3 and 10, respectively. The right subtree of the node containing the value 10, as well as the left and right subtrees of the nodes containing the values 20, 21 and 1, are empty trees.
-
-
+For example, the figure below shows a binary tree consisting of six nodes.
+Its root contains the value 5, and the roots of its left and right subtrees have the values 3 and 10, respectively.
+The right subtree of the node containing the value 10, as well as the left and right subtrees of the nodes containing
+the values 20, 21 and 1, are empty trees.
 
 A path in a binary tree is a non-empty sequence of nodes that one can traverse by following the pointers.
 The length of a path is the number of pointers it traverses. More formally, a path of length K is a
@@ -16,7 +18,8 @@ for 0 ≤ I < K. For example, the sequence of nodes with values 5, 3, 21 is a pa
 The sequence of nodes with values 10, 1 is a path of length 1. The sequence of nodes with values 21, 3, 20 is not a valid path.
 
 The height of a binary tree is defined as the length of the longest possible path in the tree.
-In particular, a tree consisting of only one node has height 0 and, conventionally, an empty tree has height −1. For example, the tree shown in the above figure is of height 2.
+In particular, a tree consisting of only one node has height 0 and, conventionally, an empty tree has height −1.
+For example, the tree shown in the above figure is of height 2.
 
 Problem
 Write a function:
@@ -47,12 +50,25 @@ Complexity:
 
 expected worst-case time complexity is O(N);
 expected worst-case space complexity is O(N).
+
+  100%
 */
 object TreeHeight extends App {
 
-  class Tree(var x: Int, var l: Tree, var r: Tree)
+  case class Tree(var x: Int, var l: Tree, var r: Tree)
 
-  def solution(t: Tree): Int = ???
+  def solution(t: Tree): Int = {
 
+    def height(t: Tree): Int = {
+      if (t == null) 0
+      else
+        Math.max(height(t.l), height(t.r)) + 1
+    }
 
+    if (t == null) -1
+    else
+      Math.max(height(t.l), height(t.r))
+  }
+
+  assert(solution(Tree(5, Tree(3, Tree(20, null, null), Tree(21, null, null)), Tree(10, Tree(1, null, null), null))) == 2)
 }

@@ -35,5 +35,5 @@ object CyclicRotation extends App {
     a.slice(a.length - k1, a.length) ++ a.slice(0, a.length - k1)
   }
 
-  println(solution(Array(3, 8, 9, 7, 6), 2).toList)
+  assert(solution(Array(3, 8, 9, 7, 6), 2) sameElements Array(7, 6, 3, 8, 9))
 }
