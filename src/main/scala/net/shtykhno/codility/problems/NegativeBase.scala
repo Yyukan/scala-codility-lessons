@@ -46,8 +46,10 @@ object NegativeBase extends App {
   }
 
   println(toDecimal(Array[Int](1,0,0,1,1), -2))
+  println(toBase(9, -2).mkString(","))
   println(toBase(-9, -2).mkString(","))
   println(toBase(-23, -2).mkString(","))
+  println(toBase(23, -2).mkString(","))
   // https://en.wikipedia.org/wiki/Negative_base
   println(toBase(146, -3).mkString(","))
 
